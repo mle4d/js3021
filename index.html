@@ -12,7 +12,6 @@
 <script>
   const compass = document.querySelector('.compass');
   const speed = document.querySelector('.speed');
-
     navigator.geolocation.watchPosition((data) => {
     compass.style.transform = `rotate(${data.coords.heading}deg)`;
     speed.textContent = data.coords.speed;
