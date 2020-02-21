@@ -8,14 +8,18 @@
 <body>
   <header><h1>Skeletor's Dead Reckoning</h1></header>
   <div class="compass"></div>
-  <div class="speed"></div>MPH
+  <h2 class="speed">0</h2>MPH
 <script>
   const compass = document.querySelector('.compass');
   const speed = document.querySelector('.speed');
     navigator.geolocation.watchPosition((data) => {
     compass.style.transform = `rotate(${data.coords.heading}deg)`;
     speed.textContent = data.coords.speed;
-  });
+    // const km = speed.textContent;
+    // console.log(speed.textContent);
+    //  function getKm(km) {
+    //    return km * 0.621371;
+     });
 </script>
 </body>
 </html>
