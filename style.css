@@ -16,9 +16,20 @@ body {
 header {
   font-family: 'Metal Mania';
   color: transparent;
-  text-shadow: 0px 0px 0px #6543cb, -6px 0px 0px #f9e66b;
-  font-size: 4vw;
+  text-shadow: 0px 0px 0px #704795, -6px 0px 0px #f9e66b, 1px 0px 0px #000000;
+  font-size: 3vw;
   position: fixed;
-  top: -1%;
+  top: -2%;
   text-align: center;
+  padding-bottom: 80px;
+}
+.compass {
+  background-image: url(assets/hestheman.png);
+  background-size: 100%;
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition: all 0.2s;
+  transform: rotate(0deg);
 }
