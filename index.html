@@ -10,6 +10,14 @@
   <div class="compass">
   </div>
 <script>
+  const compass = document.querySelector('.compass');
+
+    navigator.geolocation.watchPosition((data) => {
+    console.log(data);
+    compass.style.transform = `rotate(${data.coords.heading}deg)`;
+  }, (err) => {
+    console.error(err);
+  });
 </script>
 </body>
 </html>
