@@ -1,5 +1,6 @@
 html {
-background-color: #6f4fce;
+  background: rgb(255,237,134);
+  background: radial-gradient(circle, rgba(255,237,134,1) 10%, rgba(133,172,251,1) 48%, rgba(111,79,206,1) 82%);
 }
 
 body {
