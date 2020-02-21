@@ -9,15 +9,17 @@
   <header><h1>Skeletor's Dead Reckoning</h1></header>
   <div class="compass">
   </div>
+  
+      <div class="speed"></div>MPH
+  
 <script>
   const compass = document.querySelector('.compass');
+  const speed = document.querySelector('.speed');
 
     navigator.geolocation.watchPosition((data) => {
     console.log(data);
     compass.style.transform = `rotate(${data.coords.heading}deg)`;
-  }, (err) => {
-    console.error(err);
-    alert('NYEH, allow me access to your location!');
+    speed.textContent = data.coords.speed;
   });
 </script>
 </body>
