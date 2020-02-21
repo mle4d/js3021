@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Metal+Mania&display=swap');
 html {
   background: rgb(255,237,134);
-  background: radial-gradient(circle, rgba(255,237,134,1) 10%, rgba(133,172,251,1) 48%, rgba(111,79,206,1) 82%);
+  background: radial-gradient(circle, rgba(255,237,134,1) 10%, rgba(133,172,251,1) 48%, #704795 82%);
 }
 body {
   margin: 0;
@@ -12,24 +12,23 @@ body {
   flex-direction: column;
   overscroll-behavior: none;
   text-align: center;
-}
-header {
   font-family: 'Metal Mania';
-  color: transparent;
-  text-shadow: 0px 0px 0px #704795, -6px 0px 0px #f9e66b, 1px 0px 0px #000000;
   font-size: 3vw;
-  position: fixed;
-  top: -2%;
+  color: #704795;
+}
+h1 {
+  color: transparent;
+  text-shadow: 0px 0px 0px #704795, -6px 0px 1px #f9e66b, 1px 0px 2px #000000;
+  font-size: 8vw;
+  margin-top: -5%;
   text-align: center;
-  padding-bottom: 80px;
 }
 .compass {
   background-image: url(assets/hestheman.png);
   background-size: 100%;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   background-repeat: no-repeat;
-  overflow: hidden;
-  transition: all 0.2s;
   transform: rotate(0deg);
 }
+
