@@ -71,9 +71,9 @@ h1 {
   h1 {
     color: transparent;
     text-shadow: 0px 0px 0px #704795, -6px 0px 1px #f9e66b, 1px 0px 2px #000000;
-    font-size: 8vw;
-    margin-top: 2%;
-    margin-right: 2%;
+    font-size: 7vw;
+    margin-right: 4%;
+    margin-left: 4%;
   }
   .data {
     display: flex;
