@@ -48,8 +48,11 @@ h1 {
  align-items: center;
  width: 70vw;
  font-size: 3vw;
- padding: 10px;
  margin-top: -8%;
+}
+.lat {
+  width: 30vw;
+  text-align: center;
 }
 .compass {
   background-image: url(assets/hestheman.png);
@@ -90,15 +93,15 @@ h1 {
     justify-content: space-around;
     align-items: center;
     width: 70vw;
+    height: 30vh;
     font-size: 6vw;
     padding: 10px;
     margin-top: -8%;
    }
    .lat {
     color: #89aff8;
-  }
-  .long {
-    color: #f9e66b;
+    width: 60vw;
+    text-align: center;
   }
    .compass {
     background-image: url(assets/hestheman.png);
