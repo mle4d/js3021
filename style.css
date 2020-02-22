@@ -10,7 +10,7 @@ html {
 body {
   margin: 0;
   font-family: 'Metal Mania';
-  font-size: 5vw;
+  font-size: 7vw;
   color: #704795;
   overscroll-behavior: none;
   position: fixed;
@@ -46,7 +46,7 @@ h1 {
  justify-content: space-around;
  align-items: center;
  width: 70vw;
- font-size: 2vw;
+ font-size: 3vw;
  padding: 10px;
  margin-top: -8%;
 }
