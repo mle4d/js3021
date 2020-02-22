@@ -10,7 +10,6 @@
   <section class="data">
   <span class="coordinates">
     <p class="lat"></p>
-    <p class="long"></p>
     <h2 class="speed">0</h2>
   </span>
   <div class="compass"></div>
@@ -24,8 +23,7 @@
       console.log(data);
     compass.style.transform = `rotate(${data.coords.heading}deg)`;
     compass.style.Webkitransform = `rotate(${data.coords.heading}deg)`;
-    lat.textContent = "Latitude:" + data.coords.latitude;
-    long.textContent = "Longitude:" + data.coords.longitude;
+    lat.textContent = "Latitude: " + data.coords.latitude + " Longitude: " + data.coords.longitude;
     speed.textContent = data.coords.speed + "/KPH";
      });
 </script>
