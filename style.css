@@ -53,6 +53,7 @@ h1 {
 .compass {
   background-image: url(assets/hestheman.png);
   background-size: 100%;
+  position: absolute;
   width: 50vw;
   height: 85vh;
   background-repeat: no-repeat;
