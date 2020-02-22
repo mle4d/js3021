@@ -26,6 +26,11 @@ h1 {
   margin-left: 30%;
   text-align: center;
 }
+p {
+  width: 1000px;
+  font-size: 3vw;
+  text-align: right;
+}
 .compass {
   background-image: url(assets/hestheman.png);
   background-size: 100%;
