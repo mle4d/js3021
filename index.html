@@ -7,10 +7,14 @@
 </head>
 <body>
   <header><h1>Skeletor's Dead Reckoning</h1></header>
-  <p class="lat"></p>
-  <p class="long"></p>
+  <section class="data">
+  <span class="coordinates">
+    <p class="lat"></p>
+    <p class="long"></p>
+    <h2 class="speed">0</h2>
+  </span>
   <div class="compass"></div>
-  <section class="zoom"><h2 class="speed">0</h2>MPH</section>
+</section>
 <script>
   const compass = document.querySelector('.compass');
   const speed = document.querySelector('.speed');
@@ -19,7 +23,7 @@
     navigator.geolocation.watchPosition((data) => {
       console.log(data);
     compass.style.transform = `rotate(${data.coords.heading}deg)`;
-    speed.textContent = data.coords.speed;
+    speed.textContent = data.coords.speed + "/MPH";
     console.log( data.coords.speed);
     lat.textContent = "Latitude:" + data.coords.latitude;
     long.textContent = "Longitude:" + data.coords.longitude;
