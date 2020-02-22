@@ -23,7 +23,7 @@
     navigator.geolocation.watchPosition((data) => {
       console.log(data);
     compass.style.transform = `rotate(${data.coords.heading}deg)`;
-    compass.style.transform = `rotate(${data.coords.heading}deg)`;
+    compass.style.Webkitransform = `rotate(${data.coords.heading}deg)`;
     lat.textContent = "Latitude:" + data.coords.latitude;
     long.textContent = "Longitude:" + data.coords.longitude;
     speed.textContent = data.coords.speed + "/MPH";
