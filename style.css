@@ -55,7 +55,7 @@ h1 {
   background-image: url(assets/hestheman.png);
   background-size: 100%;
   width: 50vw;
-  height: 85vh;
+  height: 70vh;
   background-repeat: no-repeat;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -82,7 +82,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     width: 80%;
-    position: absolute;
+    position: fixed;
    }
    .coordinates {
     display: flex;
@@ -105,7 +105,7 @@ h1 {
     background-size: 100%;
     align-items: center;
     width: 70vw;
-    height: 105vh;
+    height: 40vh;
     background-repeat: no-repeat;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
