@@ -24,7 +24,7 @@
     compass.style.transform = `rotate(${data.coords.heading}deg)`;
     compass.style.Webkitransform = `rotate(${data.coords.heading}deg)`;
     lat.textContent = "Latitude: " + data.coords.latitude + " Longitude: " + data.coords.longitude;
-    speed.textContent = data.coords.speed + "/KPH";
+    speed.textContent = data.coords.speed /1.609344 + "/MPH" +  data.coords.speed + "/KPH";
      });
 </script>
 </body>
